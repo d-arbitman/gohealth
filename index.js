@@ -16,7 +16,11 @@ try {
 
   const bigrams = ngram.findBigrams(contents);
   const counts = ngram.countNGrams(bigrams);
-  console.log(counts);
+
+  // console.log keys/associated counts in counts
+  for(let key in counts) {
+    console.log(`${key}: ${counts[key]}`);
+  }
 } catch(err) {
   console.error(err.message);
   process.exit(1);
