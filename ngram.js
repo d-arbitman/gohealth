@@ -8,7 +8,7 @@
  * @return {object} {n-gram: count...}
  */
 exports.findNGrams = function(numGram, str) {
-  // object containing found n-grams
+  // array containing found n-grams
   let grams = [];
 
   if (isNaN(numGram) || typeof numGram !== "number") {
@@ -18,7 +18,7 @@ exports.findNGrams = function(numGram, str) {
   // creates words array:
   //  convert string to lowercase,
   //  remove non-alphabetic characters
-  // remove excess whitespace at the beginning and end of string
+  //  remove excess whitespace at the beginning and end of string
   //  split by any number (>1) of contiguous whitespace
   const words = str
                 .toLowerCase()
@@ -26,6 +26,7 @@ exports.findNGrams = function(numGram, str) {
                 .trim()
                 .split(/\s+/);
 
+  // loop through words array to create new array of ngrams
   for(let i = 0, c = words.length - (numGram - 1); i < c; i++) {
     // take array slice of words and join with space to make current gram
     const currentGram = words.slice(i, i + numGram).join(" ");
