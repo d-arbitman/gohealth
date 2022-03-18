@@ -1,9 +1,10 @@
 {
-  "name": "gohealth",
+  "name": "ngram-js",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "main": "node index.js",
     "test": "mocha"
   },
   "repository": {
@@ -13,6 +14,10 @@
   "author": "David Arbitman",
   "license": "ISC",
   "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^8.11.0",
+    "eslint-plugin-promise": "^6.0.0",
     "mocha": "^6.2.0"
-  }
+  },
+  "type": "commonjs"
 }

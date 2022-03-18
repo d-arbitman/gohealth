@@ -1,4 +1,4 @@
-# gohealth exercise
+# ngram exercise
 
 Application dependencies
   * node
@@ -12,12 +12,12 @@ Additional dependencies for tests
 ```bash
   node index.js [filename]
 ```
-  > lines has been included as sample data, so the following will work
+  > lines file has been included as sample data, so the following will work
 ```bash
   node index.js lines
 ```
 
-**To run tests**
+**To execute tests**
 ```bash
   npm install
   npm test
