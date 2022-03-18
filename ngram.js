@@ -3,7 +3,7 @@
 /**
  * search given string for n-gram of size numGram
  *
- * @param {string} numGram size of n-gram
+ * @param {number | string} numGram size of n-gram
  * @param {string} str string to search
  * @return {object} {n-gram: count...}
  */
